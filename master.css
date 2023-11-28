@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.cursor {
+    height: 30px;
+    width: 30px;
+    z-index: 1111111;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid orange;
+    position: fixed;    
+    transition: all linear 0.2s;
+}
+
+body {
+    font-family: "Montserrat";
+    font-weight: 500;
+    background: rgb(255, 255, 255);
+    color: rgb(30, 30, 30);
+    background: url(images/gray-gradient-background-xt2gwofl24pwwspf.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.navbarWrapper {
+    z-index: 55555;
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoSection {
+    width: 45%;
+}
+
+.logoSection a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: black;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+.logoSection img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.menuSection{
+    width: 55%;
+    border: 1px solid orange;
+    padding: 15px 0px;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
+}
+.menuList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+.ham {
+    color: orange;
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+}
+.hamClose {
+    display: none;
+    color: orange;
+    font-size: 28px;
+    cursor: pointer;
+}
+.menuItem {
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+.menuItem:hover {
+    color: orange;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1150px) {
+    .navbar {
+        width: 96%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbarWrapper {
+        padding: 14px 0px;
+    }
+
+    .logoSection a {
+        font-size: 18px;
+    }
+
+    .menuSection {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        height: 100vh;
+        background: black;
+        animation: drawer 0.5s ease-in-out;
+        box-shadow: -2px 0px 10px rgb(0, 0, 0, 0.2);
+        z-index: 99999;
+        padding: 0px 40px;
+        display: none;
+    }
+    .ham {
+        display: block;
+    }
+    .hamClose {
+        display: block;
+    }
+    .menuList {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        height: 100%;
+    }
+
+    @keyframes drawer {
+        0% {
+            transform: translateX(300px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
+
+.container {
+    font-size: 14px;
+    padding: 40px 28px;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin-top: 30px;
+        padding: 40px 14px;
+    }
+}
+#specitem {
+    color: orange;
+}
+.logoSection span{
+    color: orange;
+}
+.logoSection p{
+    color: white;
+    padding: 0px 8px;
+}
+.section1{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.homesec1{
+    width: 80%;
+    height: 90%;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid orange;
+    gap: 20px;
+}
+.sec1img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 80%;
+}
+.sec1img img{
+    height: 100%;
+    rotate: -15deg;
+    transition:ease-in-out 0.3s;
+}
+.sec1img img:hover{
+    transform: scale(1.1);
+    rotate: 0deg;
+}
+.sec1data{
+    padding: 15px;
+    width: 55%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-left: 4px dotted orange;
+}
+.sec1data h1{
+    color: white;
+    font-size: 2.2em;
+    padding-bottom: 40px;
+}
+.sec1data p{
+    height: 50%;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.sec1data h1 span{
+    color: orange;
+}
+.sec1btn{
+    width: 100%;
+    height: 20%;
+    gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec1btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 55%;
+    border-radius: 25px;
+    margin-left: 15px;
+    font-size: 1em;
+    font-weight: 500;
+    transition: ease-in-out 0.3s;
+}
+.sec1btn a:hover{
+    transform: scale(1.1);
+}
+.right{
+    color: orange;
+    border: 1px solid orange;
+}
+.right:hover{
+    color: white;
+    background-color: orange;
+}
+.left{
+    color: white;
+    background-color: orange;
+}
+.left:hover{
+    color: orange;
+    background-color: transparent;
+    border: 1px solid orange;    
+}
+.section2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+}
+.section2 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 10%;
+    border-radius: 25px;
+    font-size: 2vw;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.6);
+    backdrop-filter: blur(2px);
+}
+.card-container{
+    margin-top: 30px;
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    width: 300px;
+    height: 80%;
+    overflow: hidden;
+    margin: 15px;
+    background-color: rgb(0, 0, 0, 0.5); 
+    backdrop-filter: blur(6px);  
+    border: 1px solid orange; 
+}
+.card-img{
+    margin: 15px 10%;
+    width: 80%;
+    border-radius: 15px;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, rgb(15, 179, 224), rgb(74, 111, 220));
+}
+.card img{
+    width: 60%;
+    height: 70%;
+    object-position: center;
+    object-fit: cover;
+    transition: 0.8s;
+}
+.card img:hover{
+    transform: scale(1.3);
+    rotate-y: 360deg;
+}
+.card-div{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card-div h2{
+    margin: 10px;
+    color: orange;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.price{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: orange;
+    font-size: 1em;
+}
+.price span{
+    color: white;
+}
+.price a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    border-radius: 15px;
+    width: 30%;
+    height: 80%;
+    border: 1px solid orange;
+    color: orange;
+    transition: 0.3s ease-in-out;
+}
+.price a:hover{
+    background-color: orange;
+    color: white;
+    transform: scale(1.2);
+}
+.section3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section3 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 2vw;
+    background-color: rgba(255, 166, 0, 0.6);
+    backdrop-filter: blur(2px);
+}
+.sec3div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    border: 1px solid orange;
+}
+.sec3div2{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.sec3div3{
+    width: 15%;
+    height: 90%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid orange;
+    transition: ease-in-out 0.3s;
+}
+.sec3div3:hover{
+    transform: scale(1.3);
+}
+.sec3div3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.section8{
+    background-color:  rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 50vh;
+    border-top: 1px solid orange;
+}
+.sec8div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+.sec8div2{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.sec8div2 p:hover{
+    transform: scale(1.1);
+    color: orange;
+}
+.sec8div2 h1{
+    color: orange;
+    padding: 0px 0px 20px 0px;
+}
+.sec8div2 p{
+    padding-bottom: 10px;
+    color: whitesmoke;
+    transition: ease-in-out 0.3s;
+}
+.sec8div2 div{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 25px;
+    
+}
+.sec8div3{
+    width: 25%;
+    height: 80%;
+    color: whitesmoke;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.sec8div3 div{
+    width: 100%;
+}
+.logosection {
+    width: 100%;
+}
+
+.logosection a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: black;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+.logosection img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.logosection span{
+    color: orange;
+}
+.logosection p{
+    color: white;
+    font-size: 3vw;
+    padding: 0px 8px;
+}
+
+.footer{
+    width: 100%;
+    background-color:  rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-size: 0.5em;
+    padding: 30px 0px; 
+    color: whitesmoke;  
+}
+.footer span{
+    color: orange;
+}
+.footer i:hover{
+    color: red;
+}

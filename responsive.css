@@ -1,0 +1,361 @@
+@media only screen and (max-width: 1000px) and (min-width: 700px){
+    .homesec1{
+        width: 95%;
+        height: 100%;
+    }
+    .sec1img{
+        height: 70%;
+    }
+    .sec1data p{
+        height: 40%;
+        font-size: 1em;
+    }
+    .sec1btn a{
+        width: 35%;
+    }
+    .sec3div1{
+        width: 95%;
+    }
+    .Homesec1{
+        width: 90%;
+        height: 100%;
+        gap: 40px;
+        padding: 20px;
+    }
+    .Sec1img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18%;
+        height: 18%;
+    }
+    .Sec1data{
+        padding: 15px;
+        width: 90%;
+        height: 75%;
+    }
+    .Sec1data h1{
+        color: white;
+        font-size: 2em;
+        margin: 40px 0px;
+    }
+    .Sec1data p{
+        height: 60%;
+        font-size: 1.1em;
+        font-weight: 300;
+        color: whitesmoke;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .member{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 27%;
+        height: 80%;
+        object-fit: fill;
+        border-radius: 25px;
+        border: 1px solid red;
+    }
+    .memimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .memname h1{
+        color: red;
+        font-size: 3vw;
+    }
+    .memname p{
+        color: white;
+        font-size: 2vw;
+    }
+
+}
+@media only screen and (max-width: 699px) and (min-width: 350px){
+    .section1{
+        width: 100%;
+        height: 110vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    
+    .homesec1{
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .sec1img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 30%;
+    }
+    .sec1img img{
+        height: 90%;
+        rotate: -15deg;
+        transition:ease-in-out 0.3s;
+    }
+    .sec1img img:hover{
+        transform: scale(1.1);
+        rotate: 0deg;
+    }
+    .sec1data{
+        padding: 15px;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        border-left: none;
+        border-top: 4px solid orange;
+    }
+    .sec1data h1{
+        color: white;
+        font-size: 2em;
+        padding-bottom: 40px;
+    }
+    .sec1data p{
+        height: 50%;
+        font-size: 1em;
+        font-weight: 300;
+        color: whitesmoke;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .sec1btn a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        height: 55%;
+        border-radius: 25px;
+        margin-left: 15px;
+        font-size: 1em;
+        font-weight: 500;
+        transition: ease-in-out 0.3s;
+    }
+    .section2 h1{
+        width: 35%;
+        font-size: 4vw;
+    }
+    
+    .section8{
+        display: none;
+    }
+    .section3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    
+    .section3 h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+        height: 10%;
+        border-radius: 25px;
+        color: white;
+        font-size: 4vw;
+        background-color: rgba(255, 166, 0, 0.6);
+        backdrop-filter: blur(2px);
+    }
+    .sec3div1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        width: 90%;
+        height: 80%;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0, 0.6);
+        backdrop-filter: blur(3px);
+        border-radius: 15px;
+        border: 1px solid orange;
+    }
+    
+    .sec3div2{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: -30px;
+    }
+    .sec3div3{
+        width: 40%;
+        height: 30%;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: white;
+        border: 2px solid orange;
+        transition: ease-in-out 0.3s;
+    }
+    /* Mens and womens Page Code */
+    .men-div1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 45px;
+        backdrop-filter: blur(6px);
+        font-size: 2vw;
+    }
+    .men-div2 h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        height: 40px;
+        margin: 40px 30px;
+        background-color: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(6px);
+        font-size: 2.5vw;
+    }
+    
+    .card{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        width: 240px;
+        height: 300px;
+        overflow: hidden;
+        margin: 10px;
+    }
+    
+    .price a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vw;
+        border-radius: 15px;
+        width: 30%;
+        height: 80%;
+        transition: 0.3s ease-in-out;
+    }
+
+    .Homesec1{
+        width: 90%;
+        height: 100%;
+        gap: 40px;
+        padding: 20px;
+    }
+    .Sec1img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 20%;
+    }
+    .Sec1data{
+        padding: 10px;
+        width: 90%;
+        height: 75%;
+    }
+    .Sec1data h1{
+        color: white;
+        font-size: 1.6em;
+        margin: 10px 0px;
+    }
+    .Sec1data p{
+        height: 60%;
+        font-size: 0.8em;
+        font-weight: 300;
+        color: whitesmoke;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .Sec1btn a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 40px;
+        border-radius: 25px;
+        margin-left: 0px;
+        font-size: 1em;
+        font-weight: 500;
+        transition: ease-in-out 0.3s;
+    }
+    
+    .member{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        height: 27%;
+        object-fit: fill;
+        border-radius: 25px;
+        border: 1px solid red;
+    }
+    .memimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .memname h1{
+        color: red;
+        font-size: 3vw;
+    }
+    .memname p{
+        color: white;
+        font-size: 2vw;
+    }
+    .team{
+        width: 100%;
+        height: 220vh;
+        margin: 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .team h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        width: 40%;
+        font-size: 4vw;
+        backdrop-filter: blur(6px);
+        height: 40px;
+        color: red;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .team-div{
+        width: 95%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(6px);
+        border-radius: 25px;
+        gap: 30px;
+    }
+    
+    
+    
+}
+
